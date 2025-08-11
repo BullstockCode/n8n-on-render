@@ -7,3 +7,5 @@ ENV N8N_PORT=${PORT}
 ENV GENERIC_TIMEZONE="Europe/Lisbon"
 
 CMD ["n8n", "start"]
+RUN npm install -g n8n
+
