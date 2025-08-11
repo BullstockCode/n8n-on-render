@@ -1,5 +1,4 @@
-FROM n8nio/n8n:latest
-
+FROM n8nio/n8n
 # Configura para usar a porta que o Render define
 ENV N8N_PORT=${PORT}
 
@@ -7,5 +6,5 @@ ENV N8N_PORT=${PORT}
 ENV GENERIC_TIMEZONE="Europe/Lisbon"
 
 CMD ["n8n", "start"]
-RUN npm install -g n8n
+
 
